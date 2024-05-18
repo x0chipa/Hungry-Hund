@@ -10,23 +10,28 @@ class FavoriteScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Favorites", style: h2Style)),
+      appBar: AppBar(title: const Text("Favoritos", style: h2Style)),
       body: Padding(
         padding: const EdgeInsets.all(15),
         child: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              controller.favoriteFurnitureList.isNotEmpty
-                  ? FurnitureListView(
-                      isHorizontal: false,
-                      furnitureList: controller.favoriteFurnitureList,
-                    )
-                  : const EmptyWidget(
-                      type: EmptyWidgetType.favorite,
-                      title: "Empty",
-                    )
-            ],
+          child: SizedBox(
+            height: MediaQuery.of(context).size.height - kToolbarHeight,
+            child: Column(
+              mainAxisAlignment: controller.favoriteFurnitureList.isNotEmpty 
+                  ? MainAxisAlignment.start 
+                  : MainAxisAlignment.center,
+              children: [
+                controller.favoriteFurnitureList.isNotEmpty
+                    ? FurnitureListView(
+                        isHorizontal: false,
+                        furnitureList: controller.favoriteFurnitureList,
+                      )
+                    : const EmptyWidget(
+                        type: EmptyWidgetType.favorite,
+                        title: "Aun no tienes favoritos",
+                      )
+              ],
+            ),
           ),
         ),
       ),

@@ -13,7 +13,7 @@ class CartScreen extends StatelessWidget {
 
   PreferredSizeWidget _appBar() {
     return AppBar(
-      title: const Text("Cart", style: h2Style),
+      title: const Text("Carrito", style: h2Style),
       actions: [
         IconButton(
           splashRadius: 20.0,
@@ -68,7 +68,7 @@ class CartScreen extends StatelessWidget {
                     },
                   ),
                 )
-              : const EmptyWidget(title: "Empty");
+              : const EmptyWidget(title: "¿No se te antoja algo?");
         },
       ),
     );

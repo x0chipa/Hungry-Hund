@@ -1,50 +1,41 @@
 class AppAsset {
   const AppAsset._();
 
-  static const comharStandingDesk1 = "assets/images/comhar_standing_desk_1.jpg";
-  static const comharStandingDesk2 = "assets/images/comhar_standing_desk_2.jpg";
-  static const comharStandingDesk3 = "assets/images/comhar_standing_desk_3.jpg";
-  static const comharStandingDesk4 = "assets/images/comhar_standing_desk_4.jpg";
-  static const comharStandingDesk5 = "assets/images/comhar_standing_desk_5.jpg";
-  static const comharStandingDesk6 = "assets/images/comhar_standing_desk_6.jpg";
-  static const comharStandingDesk7 = "assets/images/comhar_standing_desk_7.jpg";
+  static const hamburguesaPollo1 = "assets/images/hamburguesa_pollo_1.png";
+  static const hamburguesaPollo2 = "assets/images/hamburguesa_pollo_2.png";
+  static const hamburguesaPollo3 = "assets/images/hamburguesa_pollo_3.png";
+  static const hamburguesaPollo4 = "assets/images/hamburguesa_pollo_4.png";
+  static const hamburguesaPollo5 = "assets/images/hamburguesa_pollo_5.png";
 
-  static const ergonomicGamingDesk1 =
-      "assets/images/ergonomic_gaming_desk_1.jpg";
-  static const ergonomicGamingDesk2 =
-      "assets/images/ergonomic_gaming_desk_2.jpg";
-  static const ergonomicGamingDesk3 =
-      "assets/images/ergonomic_gaming_desk_3.jpg";
-  static const ergonomicGamingDesk4 =
-      "assets/images/ergonomic_gaming_desk_4.jpg";
-  static const ergonomicGamingDesk5 =
-      "assets/images/ergonomic_gaming_desk_5.jpg";
 
-  static const kanaBambooDesk1 = "assets/images/kana_bamboo_desk_1.jpg";
-  static const kanaBambooDesk2 = "assets/images/kana_bamboo_desk_2.jpg";
-  static const kanaBambooDesk3 = "assets/images/kana_bamboo_desk_3.jpg";
-  static const kanaBambooDesk4 = "assets/images/kana_bamboo_desk_4.jpg";
-  static const kanaBambooDesk5 = "assets/images/kana_bamboo_desk_5.jpg";
-  static const kanaBambooDesk6 = "assets/images/kana_bamboo_desk_6.jpg";
+  static const hamburguesaRes1 = "assets/images/hamburguesa_res_1.png";
+  static const hamburguesaRes2 = "assets/images/hamburguesa_res_2.png";
+  static const hamburguesaRes3 = "assets/images/hamburguesa_res_3.png";
+  static const hamburguesaRes4 = "assets/images/hamburguesa_res_4.png";
+  static const hamburguesaRes5 = "assets/images/hamburguesa_res_5.png";
 
-  static const soutienOfficeChair1 = "assets/images/soutien_office_chair_1.jpg";
-  static const soutienOfficeChair2 = "assets/images/soutien_office_chair_2.jpg";
-  static const soutienOfficeChair3 = "assets/images/soutien_office_chair_3.jpg";
-  static const soutienOfficeChair4 = "assets/images/soutien_office_chair_4.jpg";
-  static const soutienOfficeChair5 = "assets/images/soutien_office_chair_5.jpg";
-  static const soutienOfficeChair6 = "assets/images/soutien_office_chair_6.jpg";
+  static const hamburguesaHawaiana1 = "assets/images/hamburguesa_hawaiana_1.png";
+  static const hamburguesaHawaiana2 = "assets/images/hamburguesa_hawaiana_2.png";
+  static const hamburguesaHawaiana3 = "assets/images/hamburguesa_hawaiana_3.png";
 
-  static const theodoreStandingDesk1 =
-      "assets/images/theodore_standing_desk_1.jpg";
-  static const theodoreStandingDesk2 =
-      "assets/images/theodore_standing_desk_2.jpg";
-  static const theodoreStandingDesk3 =
-      "assets/images/theodore_standing_desk_3.jpg";
-  static const theodoreStandingDesk4 =
-      "assets/images/theodore_standing_desk_4.jpg";
-  static const theodoreStandingDesk5 =
-      "assets/images/theodore_standing_desk_5.jpg";
 
+  static const pizzaPeperoni1 = "assets/images/pizza_peperoni_1.png";
+  static const pizzaPeperoni2 = "assets/images/pizza_peperoni_2.png";
+  static const pizzaPeperoni3 = "assets/images/pizza_peperoni_3.png";
+
+  static const pizzaHawaiana1 = "assets/images/pizza_hawaiana_1.png";
+  static const pizzaHawaiana2 = "assets/images/pizza_hawaiana_2.png";
+
+  static const pizzaQueso1 = "assets/images/pizza_queso_1.png";
+  static const pizzaQueso2 = "assets/images/pizza_queso_2.png";
+
+  static const refrescoCola = "assets/images/refresco_cola.png";
+  static const refrescoNaranja = "assets/images/refresco_naranja.png";
+  static const refrescoLimon = "assets/images/refresco_limon.png";
+  static const refrescoManzana = "assets/images/refresco_manzana.png";
+  static const refrescoUva = "assets/images/refresco_uva.png";
+  static const aguaNatural = "assets/images/agua_natural.png";
+  
   static const profilePic = "assets/images/profile_pic.png";
   static const githubPic = "assets/images/github.png";
 

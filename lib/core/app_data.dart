@@ -1,134 +1,187 @@
 import 'package:flutter/material.dart';
 import 'package:hungry_hund/core/app_asset.dart';
 import 'package:hungry_hund/src/model/furniture.dart';
-import 'package:hungry_hund/src/model/furniture_color.dart';
 import 'package:hungry_hund/src/model/bottom_navigation_item.dart';
 
 class AppData {
   const AppData._();
 
-  static const dummyText =
-      """Lorem Ipsum is simply dummy text of the printing and typesetting
-       industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-         scrambled it to make a type specimen book. It has survived not only 
-         five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-           the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-             PageMaker including versions of Lorem Ipsum.""";
-
+  
   static List<Furniture> furnitureList = [
     Furniture(
       quantity: 1,
       isFavorite: false,
-      title: 'Comhar All-in-One Standing Desk Glass',
-      description: dummyText,
+      title: 'Hambuguesa de pollo con papas fritas',
+      description: "Hamburguesa de pollo con papas fritas, acompañada de una bebida a elección",
       price: 469.99,
       score: 3.5,
       images: [
-        AppAsset.comharStandingDesk1,
-        AppAsset.comharStandingDesk2,
-        AppAsset.comharStandingDesk3,
-        AppAsset.comharStandingDesk4,
-        AppAsset.comharStandingDesk5,
-        AppAsset.comharStandingDesk6,
-        AppAsset.comharStandingDesk7,
+        AppAsset.hamburguesaPollo1,
+        AppAsset.hamburguesaPollo2,
+        AppAsset.hamburguesaPollo3,
+        AppAsset.hamburguesaPollo4,
+        AppAsset.hamburguesaPollo5,
       ],
-      colors: <FurnitureColor>[
-        FurnitureColor(color: const Color(0xFF616161), isSelected: true),
-        FurnitureColor(color: const Color(0xFF424242)),
-      ], 
-      category: 'Tables',
+      category: 'Hamburguesas',
     ),
     Furniture(
       isFavorite: false,
       quantity: 1,
-      title: 'Ergonomic Gaming Desk with Mouse Pad',
-      description: dummyText,
+      title: 'Hamburguesa de res con papas fritas',
+      //agrega una descripcion detallada
+      description: "Hamburguesa de res con papas fritas, acompañada de una bebida a elección",
       price: 299.99,
       score: 4.5,
       images: [
-        AppAsset.ergonomicGamingDesk1,
-        AppAsset.ergonomicGamingDesk2,
-        AppAsset.ergonomicGamingDesk3,
-        AppAsset.ergonomicGamingDesk4,
-        AppAsset.ergonomicGamingDesk5,
+        AppAsset.hamburguesaRes1,
+        AppAsset.hamburguesaRes2,
+        AppAsset.hamburguesaRes3,
+        AppAsset.hamburguesaRes4,
+        AppAsset.hamburguesaRes5,
       ],
-      colors: <FurnitureColor>[
-        FurnitureColor(color: const Color(0xFF5d4037), isSelected: true),
-        FurnitureColor(color: const Color(0xFF424242)),
-      ], 
-      category: 'Tables',
+      category: 'Hamburguesas',
     ),
     Furniture(
       quantity: 1,
       isFavorite: false,
-      title: 'Kana Pro Bamboo Standing Desk',
-      description: dummyText,
+      title: 'Hamburguesa hawaiana con papas fritas',
+      description: "Hamburguesa hawaiana con papas fritas, acompañada de una bebida a elección",
       price: 659.99,
       score: 3.0,
       images: [
-        AppAsset.kanaBambooDesk1,
-        AppAsset.kanaBambooDesk2,
-        AppAsset.kanaBambooDesk3,
-        AppAsset.kanaBambooDesk4,
-        AppAsset.kanaBambooDesk5,
-        AppAsset.kanaBambooDesk6,
+        AppAsset.hamburguesaHawaiana1,
+        AppAsset.hamburguesaHawaiana2,
+        AppAsset.hamburguesaHawaiana3,
       ],
-      colors: <FurnitureColor>[
-        FurnitureColor(color: const Color(0xFF616161), isSelected: true),
-        FurnitureColor(color: const Color(0xFF212121)),
-      ], 
-      category: 'Tables',
+      category: 'Hamburguesas',
     ),
     Furniture(
       quantity: 1,
       isFavorite: false,
-      title: 'Soutien Ergonomic Office Chair',
-      description: dummyText,
+      title: 'Pizza de peperoni',
+      description:  "Pizza de peperoni, acompañada de una bebida a elección",
       price: 349.99,
       score: 2.5,
       images: [
-        AppAsset.soutienOfficeChair1,
-        AppAsset.soutienOfficeChair2,
-        AppAsset.soutienOfficeChair3,
-        AppAsset.soutienOfficeChair4,
-        AppAsset.soutienOfficeChair5,
-        AppAsset.soutienOfficeChair6,
-      ],
-      colors: <FurnitureColor>[
-        FurnitureColor(color: const Color(0xFF455a64), isSelected: true),
-        FurnitureColor(color: const Color(0xFF263238)),
-      ], 
-      category: 'Chairs',
+        AppAsset.pizzaPeperoni1,
+        AppAsset.pizzaPeperoni2,
+        AppAsset.pizzaPeperoni3,
+      ], category: 'Pizzas',
+    
     ),
     Furniture(
       quantity: 1,
       isFavorite: false,
-      title: 'Theodore Standing Desk',
-      description: dummyText,
+      title: 'Pizza hawaiana',
+      description: "Pizza hawaiana, acompañada de una bebida a elección",
       price: 499.99,
       score: 2.8,
       images: [
-        AppAsset.theodoreStandingDesk1,
-        AppAsset.theodoreStandingDesk2,
-        AppAsset.theodoreStandingDesk3,
-        AppAsset.theodoreStandingDesk4,
-        AppAsset.theodoreStandingDesk5,
+        AppAsset.pizzaHawaiana1,
+        AppAsset.pizzaHawaiana2,
       ],
-      colors: <FurnitureColor>[
-        FurnitureColor(color: const Color(0xFF5d4037), isSelected: true),
-        FurnitureColor(color: const Color(0xFF455a64)),
-      ], 
-      category: 'Tables',
+      category: 'Pizzas',
+    ),
+
+    Furniture(
+      quantity: 1,
+      isFavorite: false,
+      title: 'Pizza de queso',
+      description: "Pizza de queso, acompañada de una bebida a elección",
+      price: 499.99,
+      score: 2.8,
+      images: [
+        AppAsset.pizzaQueso1,
+        AppAsset.pizzaQueso2,
+      ],
+      category: 'Pizzas',
+    ),
+
+    Furniture(
+      quantity: 1,
+      isFavorite: false,
+      title: 'Refresco de cola',
+      description: "Refresco de cola",
+      price: 19.99,
+      score: 4.5,
+      images: [
+        AppAsset.refrescoCola,
+      ],
+      category: 'Bebidas',
+    ),
+
+    Furniture(
+      quantity: 1,
+      isFavorite: false,
+      title: 'Refresco de naranja',
+      description: "Refresco de naranja",
+      price: 19.99,
+      score: 4.5,
+      images: [
+        AppAsset.refrescoNaranja,
+      ],
+      category: 'Bebidas',
+    ),
+
+    Furniture(
+      quantity: 1,
+      isFavorite: false,
+      title: 'Refresco de limón',
+      description: "Refresco de limón",
+      price: 19.99,
+      score: 4.5,
+      images: [
+        AppAsset.refrescoLimon,
+      ],
+      category: 'Bebidas',
+    ),
+
+    Furniture(
+      quantity: 1,
+      isFavorite: false,
+      title: 'Refresco de manzana',
+      description: "Refresco de manzana",
+      price: 19.99,
+      score: 4.5,
+      images: [
+        AppAsset.refrescoManzana,
+      ],
+      category: 'Bebidas',
+    ),
+
+    Furniture(
+      quantity: 1,
+      isFavorite: false,
+      title: 'Refresco de uva',
+      description: "Refresco de uva",
+      price: 19.99,
+      score: 4.5,
+      images: [
+        AppAsset.refrescoUva,
+      ],
+      category: 'Bebidas',
+    ),
+
+    Furniture(
+      quantity: 1,
+      isFavorite: false,
+      title: 'Agua natural',
+      description: "Agua natural",
+      price: 9.99,
+      score: 4.5,
+      images: [
+        AppAsset.aguaNatural,
+      ],
+      category: 'Bebidas',
     ),
   ];
 
+
+
   static List<BottomNavigationItem> bottomNavigationItems = [
-    const BottomNavigationItem(Icon(Icons.home), 'Home'),
-    const BottomNavigationItem(Icon(Icons.add_shopping_cart_rounded), 'Shopping cart'),
-    const BottomNavigationItem(Icon(Icons.bookmark), 'Favorite'),
-    const BottomNavigationItem(Icon(Icons.person), 'Profile')
+    const BottomNavigationItem(Icon(Icons.home), 'Inicio'),
+    const BottomNavigationItem(Icon(Icons.add_shopping_cart_rounded), 'Carrito'),
+    const BottomNavigationItem(Icon(Icons.bookmark), 'Favoritos'),
+    const BottomNavigationItem(Icon(Icons.person), 'Yo')
   ];
 }

@@ -7,7 +7,6 @@ import 'package:hungry_hund/core/app_extension.dart';
 import 'package:hungry_hund/src/model/furniture.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:hungry_hund/src/view/widget/rating_bar.dart';
-import 'package:hungry_hund/src/view/widget/color_picker.dart';
 import 'package:hungry_hund/src/view/screen/home_screen.dart';
 import 'package:hungry_hund/src/view/widget/counter_button.dart';
 import 'package:hungry_hund/src/controller/office_furniture_controller.dart';
@@ -58,7 +57,7 @@ class OfficeFurnitureDetailScreen extends StatelessWidget {
             children: [
               const FittedBox(
                 child: Text(
-                  'Price',
+                  'Precio',
                   style: TextStyle(
                     color: Colors.black45,
                     fontWeight: FontWeight.bold,
@@ -78,7 +77,7 @@ class OfficeFurnitureDetailScreen extends StatelessWidget {
               ),
             ),
             onPressed: () => controller.addToCart(furniture),
-            child: const Text("Add to cart"),
+            child: const Text("Añadir al carrito"),
           )
         ],
       ),
@@ -158,7 +157,7 @@ class OfficeFurnitureDetailScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(top: 20, bottom: 10),
                   child: const Text(
-                    "Synopsis",
+                    "Descripción",
                     style: h2Style,
                     textAlign: TextAlign.end,
                   ).fadeAnimation(0.6),
@@ -172,12 +171,7 @@ class OfficeFurnitureDetailScreen extends StatelessWidget {
                 const SizedBox(height: 20),
                 Row(
                   children: [
-                    const Text(
-                      "Color :",
-                      style: h2Style,
-                      textAlign: TextAlign.end,
-                    ),
-                    Expanded(child: ColorPicker(furniture.colors)),
+                    
                     Expanded(child: GetBuilder(
                       builder: (OfficeFurnitureController controller) {
                         return CounterButton(

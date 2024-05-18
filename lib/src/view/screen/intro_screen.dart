@@ -36,7 +36,7 @@ class IntroScreen extends StatelessWidget {
             ),
             icon: const Icon(Icons.arrow_forward, color: Colors.white),
             label: Text(
-              "Get started",
+              "¡Vamos!",
               style: h3Style.copyWith(color: Colors.white),
             ),
           ),

@@ -110,7 +110,7 @@ class _OfficeFurnitureListScreenState extends State<OfficeFurnitureListScreen> {
         child: ListView(
           children: [
             CategoryListView(
-              categories: const ["All", "Chairs", "Tables", "Cabinets", "Sofas"],
+              categories: const ["All", "Hamburguesas", "Pizzas", "Bebidas"],
               onCategoryTap: onCategoryTap,
             ),
             const SizedBox(height: 15),
@@ -122,7 +122,7 @@ class _OfficeFurnitureListScreenState extends State<OfficeFurnitureListScreen> {
                   )
                 : const Center(
                     child: Text(
-                      'No items found.',
+                      'Aun no tenemos de eso...',
                       style: h2Style,
                     ),
                   ),
@@ -135,7 +135,7 @@ class _OfficeFurnitureListScreenState extends State<OfficeFurnitureListScreen> {
                   )
                 : const Center(
                     child: Text(
-                      'No popular items found.',
+                      'No hay nada por aquí...',
                       style: h2Style,
                     ),
                   ),
